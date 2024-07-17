@@ -19,3 +19,12 @@ provider "azurerm" {
 }
 
 provider "random" {}
+
+terraform {
+  backend "azurerm" {
+    resource_group_name   = "tf-stage-azure-open-ai"
+    storage_account_name  = "terraformstateopen2024ai"
+    container_name        = "tf-stage-azure-open-ai"
+    key                   = "terraform.tfstate"
+  }
+}
