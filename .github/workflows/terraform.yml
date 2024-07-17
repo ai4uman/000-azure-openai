@@ -43,6 +43,12 @@ jobs:
             -backend-config="storage_account_name=${{ secrets.AZURE_STORAGE_ACCOUNT }}" \
             -backend-config="container_name=${{ secrets.AZURE_CONTAINER_NAME }}" \
             -backend-config="key=terraform.tfstate"
+
+    - name: Print Secret Value
+      run: |
+          echo "ARP Value: ${{ secrets.AZURE_RESOURCE_GROUP }}" 
+          echo "ASA Value: ${{ secrets.AZURE_STORAGE_ACCOUNT }}" 
+          echo "CN Value: ${{ secrets.AZURE_CONTAINER_NAME }}"
           
     # Checks that all Terraform configuration files adhere to a canonical format
     # - name: Terraform Format
