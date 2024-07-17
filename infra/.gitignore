@@ -1,0 +1,37 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude the .terraformrc file in the home directory
+.terraformrc
+terraform.rc
+
+# Terraform variables files
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan output files
+*.tfplan
+
+# Ignore any .DS_Store files (common on macOS)
+.DS_Store
+
+# Ignore editor and IDE configuration files
+.vscode/
+.idea/
+
+# Ignore system files
+Thumbs.db
+Desktop.ini
