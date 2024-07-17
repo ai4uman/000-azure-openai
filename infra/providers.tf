@@ -20,3 +20,8 @@ provider "azurerm" {
 
 provider "random" {}
 
+terraform {
+  backend "local" {
+    path = "terraform.tfstate"
+  }
+}
